@@ -248,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Expanded(
                                       child: GestureDetector(
-                                        onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 10), (t) => setState(() => weight > 2 ? weight-- : null)),
+                                        onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 100), (t) => setState(() => weight > 2 ? weight-- : null)),
                                         onTapUp: (TapUpDetails details) => _timer.cancel(),
                                         onTapCancel: () => _timer.cancel(),
                                       child: FloatingActionButton(
@@ -261,7 +261,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                   Expanded(
                                     child: GestureDetector(
-                                      onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 10), (t) => setState(() => weight < 300 ? weight++ : null)),
+                                      onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 100), (t) => setState(() => weight < 300 ? weight++ : null)),
                                       onTapUp: (TapUpDetails details) => _timer.cancel(),
                                       onTapCancel: () => _timer.cancel(),
                                       child: FloatingActionButton(
@@ -312,7 +312,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Expanded(
                                       child: GestureDetector(
-                                        onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 10), (t) => setState(() => age > 2 ? age-- : null)),
+                                        onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 100), (t) => setState(() => age > 2 ? age-- : null)),
                                         onTapUp: (TapUpDetails details) => _timer.cancel(),
                                         onTapCancel: () => _timer.cancel(),
                                       child: FloatingActionButton(
@@ -325,7 +325,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                   Expanded(
                                     child: GestureDetector(
-                                        onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 10), (t) => setState(() => age < 120 ? age++ : null)),
+                                        onTapDown: (TapDownDetails details) => _timer = Timer.periodic(Duration(milliseconds: 100), (t) => setState(() => age < 120 ? age++ : null)),
                                         onTapUp: (TapUpDetails details) => _timer.cancel(),
                                         onTapCancel: () => _timer.cancel(),
                                       child: FloatingActionButton(
